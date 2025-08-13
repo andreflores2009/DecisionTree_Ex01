@@ -55,11 +55,6 @@ df = pd.DataFrame(data)
 print("Dados utilizados para gerar a árvore de decisão:")
 print(df)
 
-# Verificando se todos os valores de bolsa são únicos e estão representados
-unique_bolsas = df['Bolsa'].unique()
-print("\nValores únicos de bolsa encontrados:")
-print(unique_bolsas)
-
 # Separando as variáveis independentes (X) e a variável dependente (y)
 X = df[['Desempenho', 'Renda']]  # X contém Desempenho e Renda (features)
 y = df['Bolsa']                  # y contém a Bolsa (valor a ser previsto)
